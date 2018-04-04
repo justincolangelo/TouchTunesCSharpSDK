@@ -41,18 +41,11 @@ namespace TouchTunesCSharpSDK
         {
             var request = new HttpRequestMessage();
 
-            try
-            {
-                var data = requestOptions?.ToString();
+            var data = requestOptions?.ToString();
 
-                if (data != null)
-                {
-                    request.Content = new StringContent(data, Encoding.UTF8, "application/json");
-                }
-            }
-            catch (Exception ex)
+            if (data != null)
             {
-                return null;
+                request.Content = new StringContent(data, Encoding.UTF8, "application/json");
             }
 
             return request;
@@ -62,16 +55,9 @@ namespace TouchTunesCSharpSDK
         {
             var request = new HttpRequestMessage();
 
-            try
+            if (method != HttpMethod.Get && requestOptions.Any())
             {
-                if (method != HttpMethod.Get && requestOptions.Any())
-                {
-                    request.Content = new FormUrlEncodedContent(requestOptions);
-                }
-            }
-            catch (Exception ex)
-            {
-                return null;
+                request.Content = new FormUrlEncodedContent(requestOptions);
             }
 
             return request;
