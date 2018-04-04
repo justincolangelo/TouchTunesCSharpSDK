@@ -1,0 +1,17 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+<metadata>
+	<id>TouchTunesCSharpSDK</id>
+    <version>$version$</version>
+	<authors>Justin Colangelo</authors>
+	<owners>Justin Colangelo</owners>
+	<projectUrl>https://github.com/justincolangelo/TouchTunesCSharpSDK</projectUrl>
+	<iconUrl>http://www.touchtunes.com/public/img/tt-logo-white.png</iconUrl>
+	<requireLicenseAcceptance>false</requireLicenseAcceptance>
+	<description>Class library for interacting with Touch Tunes API</description>
+	<tags>TouchTunes</tags>
+	<references>
+		<reference file="TouchTunesCSharpSDK.dll" />
+	</references>
+</metadata>
+</package>

@@ -50,6 +50,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Packaging\TouchTunesCSharpSDK.nuspec" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Packaging\content\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
