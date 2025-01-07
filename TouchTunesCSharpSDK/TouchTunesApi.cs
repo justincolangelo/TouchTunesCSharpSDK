@@ -13,7 +13,7 @@ namespace TouchTunesCSharpSDK
         /// </summary>
         /// <param name="apiKey"></param>
         /// <param name="baseUrl"></param>
-        TouchTunesApi(string apiKey = "", string baseUrl = "http://dev.touchtunes.com")
+        public TouchTunesApi(string apiKey = "", string baseUrl = "http://dev.touchtunes.com")
         {
             ApiKey = apiKey;
             BaseUrl = baseUrl;
